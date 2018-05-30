@@ -3,7 +3,7 @@ Settings:
   menu: [
     {
       _label: "Core"
-      value: "Base"
+      value: "Generali"
     }
     {
       _label: "Editor"
@@ -15,7 +15,7 @@ Settings:
     }
     {
       _label: "Keybindings"
-      value: "Mappa Tasti"
+      value: "Scorciatoie da tastiera"
     }
     {
       _label: "Packages"
@@ -34,351 +34,354 @@ Settings:
       value: "Installa"
     }
   ]
-  "btn-open-config-folder": "Apri Directory di Configurazione"
+  "btn-open-config-folder": "Apri il percorso di configurazione"
   sectionHeadings: [
-    {_label: "Core Settings", value: "Impostazioni di Base"}
-    {_label: "Editor Settings", value: "Impostazioni dell'Editor"}
-    {_label: "System Settings", value: "Impostazioni di Sistema"}
-    {_label: "Keybindings", value: "Mappa Tasti"}
+    {_label: "Core Settings", value: "Impostazioni generali"}
+    {_label: "Editor Settings", value: "Impostazioni dell'editor"}
+    {_label: "System Settings", value: "Impostazioni del sistema"}
+    {_label: "Keybindings", value: "Scorciatoie da tastiera"}
     {_label: "Installed Packages", value: "Pacchetti installati"}
     {_label: "Choose a Theme", value: "Scegli un tema"}
-    {_label: "Installed Themes", value: "Temi Installati"}
+    {_label: "Installed Themes", value: "Temi installati"}
     {_label: "Install Packages", value: "Installa pacchetti"}
-    {_label: "Featured Packages", value: "Pacchetti Disponibili"}
-    {_label: "Install Themes", value: "Installa Temi"}
-    {_label: "Featured Themes", value: "Temi Disponibili"}
+    {_label: "Featured Packages", value: "Pacchetti in evidenza"}
+    {_label: "Install Themes", value: "Installa nuovi temi"}
+    {_label: "Featured Themes", value: "Temi in evidenza"}
     {_label: "Available Updates", value: "Aggiornamenti disponibili"}
   ]
   subSectionHeadings: [
-    {_label: "Invisible", value: "Invisibile"}
-    {_label: "Community Packages", value: "Pacchetti della Community"}
-    {_label: "Core Packages", value: "Pacchetti di Base"}
-    {_label: "Development Packages", value: "Pacchetti di sviluppo"}
+    {_label: "Invisible", value: "Caratteri invisibili"}
+    {_label: "Community Packages", value: "Pacchetti della comunità"}
+    {_label: "Core Packages", value: "Pacchetti predefiniti"}
+    {_label: "Development Packages", value: "Pacchetti per sviluppare"}
     {_label: "Git Packages", value: "Pacchetti Git"}
-    {_label: "Community Themes", value: "Temi della Comunità"}
-    {_label: "Core Themes", value: "Temi di Base"}
-    {_label: "Development Themes", value: "Temi di Sviluppo"}
+    {_label: "Community Themes", value: "Temi della comunità"}
+    {_label: "Core Themes", value: "Temi predefiniti"}
+    {_label: "Development Themes", value: "Temi per sviluppare"}
     {_label: "Git Themes", value: "Temi Git"}
   ]
   settings: {
     notes: [
       {
         _id: 'core-settings-note'
-        html: 'Queste sono le impostazioni di Base di Atom che influenzano il comportamento
-               non relativo alla modifica del testo. I pacchetti individuali possono avere 
-               le proprie impostazioni addizionali, che puoi modificare tramite la loro schedina
-               nella <a class="link packages-open">Lista dei Pacchetti</a>.'
+        html: 'Queste sono le impostazioni generali di Atom che influenzano il comportamento
+               non relativo alla modifica del testo. Ogni pacchetto può avere
+               le sue impostazioni addizionali, che puoi modificare tramite la loro schedina
+               nella <a class="link packages-open">lista dei pacchetti</a>.'
       }
       {
         _id: 'editor-settings-note'
         html: 'Queste impostazioni riguardano la modifica del testo. Alcune di queste
                possono essere sovrascritte in base al linguaggio. Controlla le
                impostazioni della lingua cliccando sulla schedina del pacchetto linguistico nella
-               <a class="link packages-open">Lista dei Pacchetti</a>.'
+               <a class="link packages-open">lista dei pacchetti</a>.'
       }
     ]
     controls: [
       {
         _id: 'core.allowPendingPaneItems'
-        title: "Consenti Anteprima degli Oggetti dei Pannelli"
+        title: "Consenti l'anteprima degli oggetti nei pannelli"
         desc: "Consenti agli oggetti di essere visionati senza dover essere aggiunti
-               permanentemente ad un pannello, come accade per i file della visualizzazione ad albero (es. singolo click)."
+               permanentemente ad un pannello, come accade per i file della visualizzazione ad albero (es. singolo clic)."
       }
       {
         _id: 'core.audioBeep'
-        title: "Beep Sonoro"
-        desc: "Emetti un suono di sistema quando certe azioni falliscono o sono infruttuose."
+        title: "Beep sonoro"
+        desc: "Emetti un suono di sistema quando certe azioni
+			   falliscono o non producono risultati."
       }
       {
         _id: 'core.automaticallyUpdate'
         title: "Aggiorna automaticamente"
-        desc: "Aggiorna Atom automaticamente quando un nuovo rilascio risulta disponibile."
+        desc: "Aggiorna Atom automaticamente quando viene rilasciata una nuova versione."
       }
       {
         _id: 'core.autoHideMenuBar'
-        title: "Nascondi Automaticamente la Barra dei Menu"
-        desc: "Nascondi in automatico la barra dei menu e commutala premendo il tasto 'Alt'. Funzionalità esclusiva di Windows e Linux."
+        title: "Nascondi automaticamente la barra dei menu"
+        desc: "Nascondi in automatico la barra dei menu e commutala premendo il tasto <code>Alt</code>. Funzionalità esclusiva di Windows e Linux."
       }
       {
         _id: 'core.closeDeletedFileTabs'
-        title: "Chiudi Schede dei File Eliminati"
-        desc: "Chiudi gli editor corrispondenti quando un file viene cancellato da fuori Atom."
+        title: "Chiudi le schede dei file eliminati"
+        desc: "Chiudi gli editor corrispondenti quando un file viene eliminato non all'interno di Atom."
       }
       {
         _id: 'core.closeEmptyWindows'
         title: "Chiudi le finestre vuote"
-        desc: "Quando il comando 'Chiudi scheda' è attivato per una finestra senza schede o pannelli aperti, viene chiusa la finestra stessa."
+        desc: "Quando il comando <code>Chiudi scheda</code> è attivato per una finestra senza schede o pannelli aperti, viene chiusa la finestra stessa."
       }
       {
         _id: 'core.destroyEmptyPanes'
-        title: "Distruggi i Pannelli Vuoti"
-        desc: "Quando l'ultima scheda di un pannello viene chiusa, rimuovi anche il pannello stesso."
+        title: "Rimuovi i pannelli vuoti"
+        desc: "Quando l'ultima scheda di un pannello viene chiusa, viene rimosso anche il pannello stesso."
       }
       {
         _id: 'core.excludeVcsIgnoredPaths'
-        title: "Escludi i Percorsi Ignorati dal VCS"
-        desc: "File e directory ignorati dal VCS saranno ignorati anche da alcuni pacchetti, come il 'fuzzy finder' e 'cerca e sostituisci'. Ad esempio, i progetti che usano Git usano i percorsi del file '.gitignore'. I pacchetti individuali possono avere configurazioni proprie addizionali per ignorare i percorsi di VCS."
+        title: "Escludi i percorsi ignorati dal VCS"
+        desc: "File e percorsi ignorati dal VCS saranno ignorati anche da alcuni pacchetti, come il <code>navigatore rapido</code> e <code>trova e sostituisci</code>. Ad esempio, i progetti che usano Git, hanno definiti questi percorsi nel file <code>.gitignore</code>. I pacchetti individuali possono avere configurazioni proprie addizionali per ignorare i percorsi di VCS."
       }
       {
         _id: 'core.fileEncoding'
-        title: "Codifica dei File"
-        desc: "Codifica di default per la lettura/scrittura dei file."
+        title: "Codifica dei file"
+        desc: "Codifica predefinita per la lettura/scrittura dei file."
       }
       {
         _id: 'core.fileSystemWatcher'
-        title: "Osservatore del File System"
-        desc: "Scegli l'implementazione usata sotto il cofano per monitorare i cambiamenti dei file. L'emulazione ignora i cambiamenti effettuati all'esterno di Atom, ma può prevenire crash e blocchi."
+        title: "Gestione del File system"
+        desc: "Scegli l'implementazione usata dietro le quinte per monitorare i cambiamenti dei file. L'emulazione ignora i cambiamenti effettuati all'esterno di Atom, ma può prevenire crash e blocchi."
         select:
-          native: "APIs native del Sistema Operativo"
-          atom: "Emulazione con Eventi Atom"
+          native: "API native del sistema operativo"
+          atom: "Emulato con gli eventi Atom"
       }
       {
         _id: 'core.followSymlinks'
-        title: "Segui Collegamenti Simbolici"
-        desc: "Segui i collegamenti simbolici durante l'accesso ai files e quando si aprono i file con il fuzzy finder."
+        title: "Segui i collegamenti simbolici"
+        desc: "Segui i collegamenti simbolici durante l'accesso ai file e quando si aprono i file con il <code>navigatore rapido</code>."
       }
       {
         _id: 'core.ignoredNames'
-        title: "Nomi Ignorati"
-        desc: "Lista dei <code>glob patterns</code>. File e cartelle che corrispondono a questi modelli saranno ignorati da alcuni pacchetti, come il 'fuzzy finder' e la visuale ad albero. I pacchetti individuali potrebbero avere ulteriori settaggi per ignorare i nomi."
+        title: "Nomi ignorati"
+        desc: "Lista dei <code>glob patterns</code>. File e cartelle che corrispondono a questi modelli saranno ignorati da alcuni pacchetti, come il <code>navigatore rapido</code> e la visuale ad albero. I pacchetti individuali potrebbero richiedere ulteriori configurazioni per ignorare i nomi."
       }
       {
         _id: 'core.openEmptyEditorOnStart'
-        title: "Apri un Editor Vuoto all'Avvio"
+        title: "Apri un editor vuoto all'avvio"
         desc: "Apri automaticamente un nuovo editor senza testo all'avvio."
       }
       {
         _id: 'core.packagesWithKeymapsDisabled'
-        title: "Pacchetti Con Mappe Caratteri Disabilitate"
+        title: "Pacchetti con scorciatoie da tastiera disabilitate"
       }
       {
         _id: 'core.projectHome'
-        title: "Home dei Progetti"
-        desc: "La directory in cui si presume che i progetti si trovino. I pacchetti creati utilizzando il generatore di pacchetti verranno archiviati per impostazione predefinita."
+        title: "Cartella predefinita dei progetti"
+        desc: "Il percorso in cui si presume si trovino i progetti. I pacchetti creati utilizzando il generatore di pacchetti saranno archiviati lì per impostazione predefinita."
       }
       {
         _id: 'core.reopenProjectMenuCount'
-        title: "Dimensione del Menu Riapri Progetti"
-        desc: "Numero di progetti recenti da visualizzare nel menu Riapri progetto."
+        title: "Dimensione del menu per riaprire i progetti"
+        desc: "Numero di progetti recenti da visualizzare nel menu per riaprire i progetti."
       }
       {
         _id: 'core.restorePreviousWindowsOnStart'
-        title: "Restore Previous Windows On Start"
-        desc: "Quando selezionato, ripristina l'ultimo stato di tutte le finestre di Atom se avviato dall'icona o con il solo <code>atom</code> dalla linea di comando; in caso contrario viene caricato l'ambiente vuoto."
+        title: "Riapri le finestre recenti all'avvio di Atom"
+        desc: "Quando selezionato, ripristina l'ultimo stato di tutte le finestre di Atom se avviato dall'icona o anche scrivendo <code>atom</code> dalla linea di comando; in caso contrario viene caricato l'ambiente vuoto."
         select:
-          no: "no"
-          yes: "si"
-          always: "sempre"
+          no: "No"
+          yes: "Sì"
+          always: "Sempre"
       }
       {
         _id: 'core.telemetryConsent'
-        title: "Invia la Telemetria al Team di Atom"
-        desc: "Consenti alle statistiche d'uso e alle segnalazioni di errore di pervenire al team di Atom al fine di migliorare il prodotto."
+        title: "Invia le statistiche al team di sviluppo di Atom"
+        desc: "Consenti l'invio delle statistiche d'uso e di registri sugli errori e eccezioni al team di Atom al fine di migliorare il prodotto."
         select:
-          limited: "Consenti statistiche d'uso anonime e limitate, e riferisci eccezioni e crash"
-          no: "Non inviare nessun dato telemetrico"
-          undecided: "Non deciso (Atom chiederà ancora al prossimo avvio)"
+          limited: "Consenti statistiche d'uso anonime, limitate e registri sulle eccezioni e crash"
+          no: "Non inviare alcun dato"
+          undecided: "Sono indeciso (Atom ti chiederà al prossimo avvio se inviarli oppure no)"
       }
       {
         _id: 'core.titleBar'
-        title: "Barra del Titolo"
-        desc: "Sperimentale: Una barra del titolo <code>personalizzata</code> si adatta ai colori del tema. Scegliendo <code>personalizzata-rientrata</code> si aggiunge un po più di spazio interno. La barra del titolo può anche essere <code>celata</code> completamente.<br>Nota: Passare ad una barra personalizzata o celata comprometterà alcune funzionalità.<br>Questa impostazione richiederà un riavvio di Atom per avere effetto."
+        title: "Barra del titolo"
+        desc: "Sperimentale: Una barra <code>personalizzata</code> del titolo che si adatta ai colori del tema. Scegliendo <code>personalizzata-rientrata</code> si aggiunge un po più di spazio interno. La barra del titolo può anche essere <code>nascosta</code> completamente.<br>Nota: Passare ad una barra personalizzata o celata comprometterà alcune funzionalità.<br>Questa impostazione richiederà un riavvio di Atom per avere effetto."
         select:
           native: "nativa"
           custom: "personalizzata"
           "custom-inset": "personalizzata-rientrata"
-          hidden: "celata"
+          hidden: "nascosta"
       }
       {
         _id: 'core.useProxySettingsWhenCallingApm'
-        title: "Usa le Impostazioni del Proxy all'Invocazione di APM"
+        title: "Usa le impostazioni del proxy all'invocazione di APM"
         desc: "Quando viene chiamato lo strumento a linea di comando <code>apm</code>, usa le impostazioni rilevate per il proxy."
       }
       {
         _id: 'core.versionPinnedPackages'
-        title: "Pacchetti con Versione Bloccata"
+        title: "Pacchetti con versione bloccata"
         desc: "Lista dei nomi dei pacchetti installati che non saranno aggiornati automaticamente."
       }
       {
         _id: 'core.useCustomTitleBar'
-        title: "Usa la Barra del Titolo Personalizzata"
-        desc: "Usa una barra del titolo personalizzata in base al tema.<br>Nota: Questa non comprende ancora l'icona del proxy.<br>Questa impostazione avrà effetto dopo il riavvio di Atom."
+        title: "Usa la barra del titolo personalizzata"
+        desc: "Usa una barra del titolo personalizzata in base al tema.<br>Nota: Questa non comprende ancora l'icona del proxy.<br>Questa impostazione avrà effetto solo dopo il riavvio di Atom."
       }
       {
         _id: 'core.warnOnLargeFileLimit'
-        title: "Avvisa Al Limite dei File Grandi"
-        desc: "Avvisa prima di aprire file più pesanti di questa quantità di Mb."
+        title: "Limita l'apertura di file con grandi dimensioni"
+        desc: "Mostra un avviso prima di aprire file più pesanti di questa quantità di megabyte."
       }
       {
         _id: 'editor.atomicSoftTabs'
-        title: "Tabulazioni Software Atomiche"
+        title: "Tabulazioni automatiche in base alla linea precedente"
         desc: "Salta le serie di spazi equivalenti ad una tabulazione durante lo scorrimento."
       }
       {
         _id: 'editor.autoIndent'
-        title: "Indentazione Automatica"
-        desc: "Fai rientrare automaticamente il cursore durante la modifica."
+        title: "Indentazione automatica"
+        desc: "Fai rientrare automaticamente il cursore durante l'inserimento di una nuova linea."
       }
       {
         _id: 'editor.autoIndentOnPaste'
-        title: "Indentazione Automatica Dopo il Copy-Paste"
-        desc: "Indenta automaticamente il testo incollato basandoti sul rientro della linea precedente."
+        title: "Indentazione automatica dopo aver incollato del testo"
+        desc: "Indenta automaticamente il testo incollato basandoti sull'indentazione della linea precedente."
       }
       {
         _id: 'editor.backUpBeforeSaving'
-        title: "Backup Prima di Salvare"
+        title: "Esegui un backup prima di salvare"
         desc: "(non è una cattiva idea)"
       }
       {
         _id: 'editor.confirmCheckoutHeadRevision'
-        title: "Conferma Revisione al Checkout dell'HEAD"
+        title: "Conferma la revisione al checkout dell'HEAD"
         desc: "Mostra un dialogo di conferma quando si fa il checkout dalla revisione dell'HEAD e si stanno per scartare le modifiche dell'ultimo commit."
       }
       {
         _id: 'editor.fontFamily'
-        title: "Famiglia dei Caratteri"
-        desc: "Il nome della famiglia di caratteri usata dal testo dell'editor."
+        title: "Famiglia di caratteri"
+        desc: "Il nome della famiglia di caratteri usata nel testo dell'editor."
       }
       {
         _id: 'editor.fontSize'
-        title: "Grandezza dei Caratteri"
+        title: "Grandezza dei caratteri"
         desc: "Altezza in pixel del testo dell'editor."
       }
       {
         _id: 'editor.invisibles.cr'
-        title: "Cr Invisibili"
+        title: "Ritorno a capo invisibile"
         desc: "Carattere usato per mostrare i caratteri di ritorno a capo
-               (ritorno stile Microsoft) quando <code>Mostra
-               Invisibili</code> è abilitata."
+               (ritorno in stile Microsoft) quando l'opzione <code>Mostra
+               caratteri invisibili</code> è abilitata."
       }
       {
         _id: 'editor.invisibles.eol'
-        title: "Eol Invisibili"
-        desc: "Caratteri usati per mostrare i caratteri di nuova linea (\n) quando
-               <code>Mostra Invisibili</code> è abilitata."
+        title: "Nuova linea invisibile"
+        desc: "Caratteri usati per mostrare i caratteri di nuova linea (\n) quando l'opzione
+               <code>Mostra caratteri invisibili</code> è abilitata."
       }
       {
         _id: 'editor.invisibles.space'
-        title: "Spazi Invisibili"
+        title: "Spazio invisibile"
         desc: "Caratteri usati per mostrare i caratteri di spazio iniziale e finale
-               quando <code>Mostra Invisibili</code> è abilitato."
+               quando l'opzione <code>Mostra caratteri invisibili</code> è abilitata."
       }
       {
         _id: 'editor.invisibles.tab'
-        title: "Tabulazioni Invisibili"
-        desc: "Caratteri usati per mostrare i caratteri di tabulazione forzata (\t) quando
-               <code>Mostra Invisibili</code> è abilitata."
+        title: "Tabulazioni invisibili"
+        desc: "Caratteri usati per mostrare i caratteri di tabulazione forzata (\t) quando l'opzione
+               <code>Mostra caratteri invisibili</code> è abilitata."
       }
       {
         _id: 'editor.lineHeight'
-        title: "Altezza Linea"
+        title: "Altezza delle linee"
         desc: "Altezza delle linee dell'editor, come moltiplicatore della grandezza dei caratteri."
       }
       {
         _id: 'editor.maxScreenLineLength'
-        title: "Altezza Massima della Linea dello Schermo"
-        desc: "Definisce la larghezza massima della finestra dell'editor prima che il wrapping software venga imposto, e si esprime come numero di caratteri."
+        title: "Lunghezza massima della linea per la tabulazione"
+        desc: "Definisce la lunghezza massima della finestra dell'editor espressa in numero di caratteri prima che l'a capo automatico venga eseguito."
       }
       {
         _id: 'editor.nonWordCharacters'
-        title: "Caratteri Non Lessicali"
+        title: "Caratteri non lessicali"
         desc: "Una stringa di caratteri che non fanno parte di nessuna parola, per definire i limiti delle parole stesse."
       }
       {
         _id: 'editor.preferredLineLength'
-        title: "Lunghezza Preferita della Linea"
+        title: "Lunghezza preferita della linea"
         desc: "Identifica la lunghezza di una linea che viene utilizzata quando si fa il wrapping del testo
-			   con l'impostazione <code>Wrapping Software Alla Lunghezza Linea Preferita</code>
+			   con l'impostazione <code>A capo automatico alla lunghezza preferita della linea</code>
                attiva, in numero di caratteri."
       }
       {
         _id: 'editor.scrollPastEnd'
-        title: "Scrolla Oltre la Fine"
-        desc: "Consenti all'editor di venire scrollato oltre la fine del documento."
+        title: "Scorri oltre la fine"
+        desc: "Consenti all'editor di scorrere oltre la fine del documento."
       }
       {
         _id: 'editor.scrollSensitivity'
-        title: "Sensibilità dello Scrolling"
-        desc: "Determina quanto viene scrollato velocemente l'editor quando si usa un mouse o un trackpad."
+        title: "Sensibilità dello scorrimento"
+        desc: "Determina quanto velocemente l'editor scorre quando si usa un mouse o
+		un trackpad."
       }
       {
         _id: 'editor.showCursorOnSelection'
-        title: "Mostra Cursore Sulla Selezione"
-        desc: "Mostra il cursore quando ci si trova in una selezione."
+        title: "Mostra il cursore nella selezione"
+        desc: "Mostra il cursore quando si del testo è selezionato."
       }
       {
         _id: 'editor.showIndentGuide'
-        title: "Mostra Guida Indentazione"
-        desc: "Mostra indicatori del rientro nell'editor."
+        title: "Mostra la guida dell'indentazione"
+        desc: "Mostra gli indicatori del rientro nell'editor."
       }
       {
         _id: 'editor.showInvisibles'
-        title: "Mostra Invisibili"
+        title: "Mostra caratteri invisibili"
         desc: "Mostra dei segnaposto per i caratteri invisibili, come tabulazioni,
                spazi e caratteri di nuova linea (a capo)."
       }
       {
         _id: 'editor.showLineNumbers'
-        title: "Mostra Numeri di Linea"
-        desc: "Mostra i numeri di linea al bordo dell'editor."
+        title: "Mostra il numero di linea"
+        desc: "Mostra i numeri delle linee al bordo dell'editor."
       }
       {
         _id: 'editor.softTabs'
-        title: "Tabulazioni Software"
-        desc: "Se il <code>Tipo di Tabulazione</code> è impostato su \"auto\"
-               è il rilevamento del tipo di tabulazione del contenuto fallisce, allora
-               questa impostazione determina quando viene usata la tabulazione software o quella rigida
+        title: "Tabulazioni soft"
+        desc: "Se il <code>Tipo di tabulazione</code> è impostato su \"auto\"
+               e il rilevamento del tipo di tabulazione del contenuto fallisce, allora
+               questa impostazione determina quando viene usata la tabulazione soft o quella hard
                alla pressione del tasto Tab."
       }
       {
         _id: 'editor.softWrap'
-        title: "Wrapping Software"
+        title: "A capo automatico"
         desc: "Manda a capo le linee che eccedono la dimensione della finestra. Quando
-               <code>Wrapping Software Alla Lunghezza Linea Preferita</code> è impostato,
-               andrà a capo secondo l'impostazione <code>Lunghezza Linea Preferita</code>."
+               <code>A capo automatico alla lunghezza preferita della linea</code> è impostato,
+               andrà a capo secondo l'impostazione <code>Lunghezza preferita
+			   della linea</code>."
       }
       {
         _id: 'editor.softWrapAtPreferredLineLength'
-        title: "Wrapping Software Alla Lunghezza Linea Preferita"
+        title: "A capo automatico alla lunghezza preferita della linea"
         desc: "Invece di andare a capo alla larghezza delle finestra, va a capo
-               al numero di caratteri definito dall'impostazione <code>Lunghezza Linea Preferita</code>.
-               Questo avrà effetto solo se il wrapping software è attivo globalmente o per il linguaggio attuale.
+               al numero di caratteri definito dall'impostazione <code>Lunghezza preferita della linea</code>.
+               Questo avrà effetto solo se l'A capo automatico è attivo globalmente o per il linguaggio attuale.
                <strong>Nota:</strong> Se vuoi nascondere la guida per il wrapping (la linea verticale) puoi
                disattivare il pacchetto <code>wrap-guide</code>."
       }
       {
         _id: 'editor.softWrapHangingIndent'
-        title: "Fai il Wrapping Software dell'Indentazione Pendente"
-        desc: "Quando il wrapping software è attivo, definisce la lunghezza
+        title: "Esegui l'a capo automatico dell'indentazione pendente"
+        desc: "Quando l'a capo automatico è attivo, definisce la lunghezza
                del rientro applicato alle linee ripiegate, in numero di caratteri."
       }
       {
         _id: 'editor.tabLength'
-        title: "Lunghezza Tabulazione"
+        title: "Lunghezza di una tabulazione"
         desc: "Numero di spazi che rappresenta una tabulazione."
       }
       {
         _id: 'editor.tabType'
-        title: "Tipo di Tabulazione"
+        title: "Tipo di tabulazione"
         desc: "Determina il carattere inserito quando il tasto Tab viene premuto. Possibili
-               valori: \"auto\", \"soft\" e \"hard\". Quando impostato su \"soft\" o su 
-               \"hard\", vengono utilizzate tabulazioni software (spazi) o tabulazioni rigide (caratteri di tabulazione).
+               valori: \"auto\", \"soft\" e \"hard\". Quando impostato su \"soft\" o su
+               \"hard\", vengono utilizzate tabulazioni soft (spazi) o tabulazioni hard (caratteri di tabulazione).
                Quando impostato su \"auto\", l'editor deduce automaticamente il tipo di tabulazione
-               basandosi sul contenuto della memoria temporanea (usa il primo spazio bianco iniziale
-               rispetto ad una linea che non è un commento), o usa il valore dell'impostazione
-               Tabulazione Software se il rilevamento fallisce."
+               basandosi sul contenuto del buffer (usa il primo spazio bianco iniziale
+               di una linea che non sia un commento), o usa il valore dell'impostazione
+               tabulazione soft se il rilevamento fallisce."
       }
       {
         _id: 'editor.undoGroupingInterval'
-        title: "Intervallo di Raggruppamento degli Annullamenti"
+        title: "Intervallo di raggruppamento degli annullamenti"
         desc: "Invervallo di tempo in millisecondi nel quale le operazioni di annullamento
         vengono raggruppate assieme nella cronologia."
       }
       {
         _id: 'editor.zoomFontWhenCtrlScrolling'
-        title: "Ingrandisci il Testo allo Scrolling con Ctrl pressato"
+        title: "Ingrandisci il testo allo scorrimento con Ctrl premuto"
         desc: "Cambia la dimensione del testo quando si preme il tasto Ctrl e
-               si scrolla verso sopra/sotto."
+               si scorre verso l'alto/il basso."
       }
       {
         _id: 'system.windows.file-handler'
@@ -388,12 +391,12 @@ Settings:
       {
         _id: 'system.windows.shell-menu-files'
         title: "Mostra nel menu contestuale dei file"
-        desc: "Aggiungi \"Apri con Atom\" al menu contestuale dei file di File Explorer."
+        desc: "Aggiungi \"Apri con Atom\" al menu contestuale dei file per Esplora risorse."
       }
       {
         _id: 'system.windows.shell-menu-folders'
         title: "Mostra nel menu contestuale delle cartelle"
-        desc: "Aggiungi \"Apri con Atom\" al menu contestuale delle cartelle di File Explorer."
+        desc: "Aggiungi \"Apri con Atom\" al menu contestuale delle cartelle di per Esplora risorse."
       }
     ]
   }
@@ -404,12 +407,12 @@ Settings:
     notes: {
       text1: "Puoi sovrascrivere queste associazioni copiandole "
       text2: "ed incollandole nel tuo "
-      text3: "file delle Associazioni"
+      text3: "file delle scorciatoie"
       text4: "."   # optional
       _template: "${text1} <icon /> ${text2} <a>${text3}</a> ${text4}"
     }
-    "search-bar-placeholder": "Ricerca tasti associati"
-    "table-header-keystroke": "Tasto"
+    "search-bar-placeholder": "Cerca tra le scorciatoie"
+    "table-header-keystroke": "Combinazione di tasti"
     "table-header-command": "Comando associato"
     "table-header-source": "Fonte"
     "table-header-selector": "Selettore"
@@ -419,37 +422,37 @@ Settings:
   }
   themes: {
     notes: {
-      text1: "Puoi anche personalizzare Atom editando "
-      text2: "il tuo Foglio di Stile"
+      text1: "Puoi anche personalizzare Atom modificando "
+      text2: "il tuo foglio di stile"
       text3: "."   # optional
       _template: "${text1} <a>${text2}</a> ${text3}"
     }
-    title1: "Tema della GUI"
-    description1: "Questo personalizza schede, barre di stato, visuali ad albero e menu a discesa"
-    title2: "Tema sintattico"
+    title1: "Tema dell'interfaccia grafica"
+    description1: "Questo personalizza le schede, le barre di stato, la visuale ad albero e i menu a tendina"
+    title2: "Tema della sintassi"
     description2: "Questo personalizza il testo all'interno dell'editor"
     searchBarText: 'Filtra i temi per nome'
   }
   updates: {
-    "check-updates": "Controlla Aggiornamenti"
-    "update-all": "Aggiorna Tutto"
-    "checking-updates": "Ricerca degli Aggiornamenti..."
+    "check-updates": "Controlla aggiornamenti"
+    "update-all": "Aggiorna tutto"
+    "checking-updates": "Ricerca degli aggiornamenti in corso..."
     "all-updated-message": "Tutti i pacchetti installati risultano aggiornati!"
   }
   install: {
     notes: {
       text1: "I pacchetti vengono pubblicati presso "
-      text2: " e sono installati all'interno di '"
-      text3: "'."   # optional
+      text2: " e sono installati nel percorso "
+      text3: ""   # optional
       _template: "${text1}<a>atom.io</a>${text2} /path/to/pkg ${text3}"
     }
-    "searchbar-placeholder": "Cerca i pacchetti"
+    "searchbar-placeholder": "Cerca tra i pacchetti"
     "btn-packages": "Pacchetti"
     "btn-themes": "Temi"
   }
   "control-btns":{
     install: "Installa"
-    update: "Aggiorna a"
+    update: "Aggiorna alla versione"
     setting: "Impostazioni"
     uninstall: "Disinstalla"
     disable: "Disattiva"
