@@ -2,11 +2,11 @@ Context:
   "atom-workspace":
     "application:inspect": "Ispeziona elemento"
   "atom-text-editor":
-    "color-picker:open": "Selettore di colore"
-    "minimap:toggle": "Aziona/Interrompi Minimap"
+    "color-picker:open": "Selettore del colore"
+    "minimap:toggle": "Attiva/disattiva minimap"
   "atom-text-editor, .overlayer":
     "core:undo": "Annulla"
-    "core:redo": "Ripeti"
+    "core:redo": "Ripristina"
     "core:cut": "Taglia"
     "core:copy": "Copia"
     "core:paste": "Incolla"
@@ -45,12 +45,12 @@ Context:
   ".tab.texteditor":
     "tabs:open-in-new-window": "Apri in una nuova finestra"
   ".tab.pending-tab":
-    "tabs:keep-pending-tab": "Mantieni la Scheda in attesa"
+    "tabs:keep-pending-tab": "Mantieni la scheda in attesa"
   ".tab-bar":
     "pane:reopen-closed-item": "Riapri la scheda chiusa"
   ".tree-view .full-menu":
-    "tree-view:add-file": "Nuovo File"
-    "tree-view:add-folder": "Nuova Cartella"
+    "tree-view:add-file": "Nuovo file"
+    "tree-view:add-folder": "Nuova cartella"
     "tree-view:move": "Rinomina"
     "tree-view:duplicate": "Duplica"
     "tree-view:remove": "Elimina"
@@ -61,18 +61,18 @@ Context:
     "tree-view:open-selected-entry-down": "Separa in basso"
     "tree-view:open-selected-entry-left": "Separa a sinistra"
     "tree-view:open-selected-entry-right": "Separa a destra"
-    "application:add-project-folder": "Aggiungi una Cartella Progetto"
+    "application:add-project-folder": "Aggiungi una cartella di un progetto"
     "tree-view:copy-full-path": "Copia il percorso completo"
-    "tree-view:copy-project-path": "Copia il percorso del Progetto"
-    "tree-view:open-in-new-window": "Apri in una Nuova Finestra"
+    "tree-view:copy-project-path": "Copia il percorso del progetto"
+    "tree-view:open-in-new-window": "Apri in una nuova finestra"
   '.tree-view .full-menu [is="tree-view-file"]':
     "tree-view:open-selected-entry-up": "Separa in alto"
     "tree-view:open-selected-entry-down": "Separa in basso"
     "tree-view:open-selected-entry-left": "Separa a sinistra"
     "tree-view:open-selected-entry-right": "Separa a destra"
   ".tree-view .full-menu .project-root > .header":
-    "tree-view:add-file": "Nuovo File"
-    "tree-view:add-folder": "Nuova Cartella"
+    "tree-view:add-file": "Nuovo file"
+    "tree-view:add-folder": "Nuova cartella"
     "tree-view:move": "Rinomina"
     "tree-view:duplicate": "Duplica"
     "tree-view:remove": "Elimina"
@@ -83,19 +83,19 @@ Context:
     "tree-view:open-selected-entry-down": "Separa in basso"
     "tree-view:open-selected-entry-left": "Separa a sinistra"
     "tree-view:open-selected-entry-right": "Separa a destra"
-    "application:add-project-folder": "Aggiungi una Cartella Progetto"
-    "tree-view:remove-project-folder": "Elimina la Cartella Progetto"
+    "application:add-project-folder": "Aggiungi una cartella di un progetto"
+    "tree-view:remove-project-folder": "Elimina la cartella di un progetto"
     "tree-view:copy-full-path": "Copia il percorso completo"
-    "tree-view:copy-project-path": "Copia il percorso del Progetto"
-    "tree-view:open-in-new-window": "Apri in una Nuova Finestra"
+    "tree-view:copy-project-path": "Copia il percorso del progetto"
+    "tree-view:open-in-new-window": "Apri in una nuova finestra"
   ".platform-darwin .tree-view .full-menu":
-    "tree-view:show-in-file-manager": "Visualizza in Finder"
+    "tree-view:show-in-file-manager": "Visualizza nel Finder"
   ".platform-win32 .tree-view .full-menu":
-    "tree-view:show-in-file-manager": "Visualizza in Esplora Risorse"
+    "tree-view:show-in-file-manager": "Visualizza in Esplora risorse"
   ".platform-linux .tree-view .full-menu":
-    "tree-view:show-in-file-manager": "Visualizza in File Manager"
+    "tree-view:show-in-file-manager": "Visualizza nel File manager"
   ".tree-view li.directory":
-    "project-find:show-in-current-directory": "Ricerca nella Cartella corrente"
+    "project-find:show-in-current-directory": "Ricerca nella cartella corrente"
   ".tree-view .multi-select":
     "tree-view:remove": "Elimina"
     "tree-view:copy": "Copia"
@@ -107,14 +107,14 @@ Context:
     "tree-view:rename": "Rinomina"
     "tree-view:reveal-active-file": "Mostra nella vista ad albero"
   ".platform-darwin atom-pane[data-active-item-path] .tab.active":
-    "tree-view:show-current-file-in-file-manager": "Visualizza in Finder"
+    "tree-view:show-current-file-in-file-manager": "Visualizza nel Finder"
   ".platform-win32 atom-pane[data-active-item-path] .tab.active":
-    "tree-view:show-current-file-in-file-manager": "Visualizza in Esplora Risorse"
+    "tree-view:show-current-file-in-file-manager": "Visualizza in Esplora risorse"
   ".platform-linux atom-pane[data-active-item-path] .tab.active":
-    "tree-view:show-current-file-in-file-manager": "Visualizza in File Manager"
+    "tree-view:show-current-file-in-file-manager": "Visualizza nel File manager"
   ".platform-darwin atom-text-editor:not([mini])":
-    "tree-view:show-current-file-in-file-manager": "Visualizza in Finder"
+    "tree-view:show-current-file-in-file-manager": "Visualizza nel Finder"
   ".platform-win32 atom-text-editor:not([mini])":
-    "tree-view:show-current-file-in-file-manager": "Visualizza in Esplora Risorse"
+    "tree-view:show-current-file-in-file-manager": "Visualizza in Esplora risorse"
   ".platform-linux atom-text-editor:not([mini])":
-    "tree-view:show-current-file-in-file-manager": "Visualizza in File Manager"
+    "tree-view:show-current-file-in-file-manager": "Visualizza nel File manager"
